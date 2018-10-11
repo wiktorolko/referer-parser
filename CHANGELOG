@@ -1,17 +1,34 @@
-Release June 2017 (2017-06-12)
-------------------------------
-Documentation: correct authors in README (#148)
-Documentation: add new section about hosted database (#150)
-Database: add preliminary list of paid sources
-Database: add some ANZ's largest ISPs' web mail domains and search engine domains (Dodo, Telstra, Optus, 2degrees, iiNet, Virgin, Vodafone etc)
-Database: add various other search engines (SosoDesk - unrelated to Soso)
-Database: add Ukrainian search providers ukr.net and i.ua
-Database: add belarusian search provider tut.by
-Database: add kununu
-Database: add outlook.live.com to list of Outlook.com email referrers
-Database: add t.umblr domain to Tumblr
-Database: merge Chinese Soso search engine under Sogou
-Database: fix for ITU as it was incorrectly indented
-Database: remove duplicated domains e.g. Comcast
-Database: move Taboola and Outbrain from "unknown" section to paid sources
-Database: move some domains into alphabetical order
+Version 0.4.0 (2018-10-11)
+--------------------------
+Support of 'paid' medium
+Moving java code to separate project
+
+Version 0.3.0 (2015-09-02)
+--------------------------
+Added Taboola, Outbrain and other referers (#109)
+Updated vagrant up to work with latest Peru version (#110) 
+Removed duplicate google.com.kh/imgres entry (#111)
+
+Version 0.2.3 (2014-02-01)
+--------------------------
+Added dedicated Vagrant setup (#92)
+Added Turkish popular traffic provider platforms, thanks @cagataygurturk!
+Now building referer-parser against Java 6, not 7 (#84)
+
+Version 0.2.2 (2014-07-23)
+--------------------------
+Fixed Java referer-parser doesn't work on Hadoop (#76)
+
+Version 0.2.1 (2014-07-16)
+--------------------------
+Updated build process for local Maven publishing (#72)
+Bumped SBT to 0.13.2 (#73)
+Added support for Scala 2.10.4 and 2.11.1 (#75)
+
+Version 0.2.0 (2014-07-02)
+--------------------------
+Added configurable list of domains which should count as "internal" (#18)
+Remove sbt-assembly and legacy Maven publish code (#71)
+Made tests JSON-driven (#4)
+Changed URI parsing to use `java.net.URL`, thanks @squeed! (#55)
+Added CHANGELOG (#68)
